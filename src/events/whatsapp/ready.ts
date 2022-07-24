@@ -1,4 +1,4 @@
-import { ExtendedClient, ExtendedEvent } from "../../interfaces";
+import { ExtendedEvent } from "../../interfaces";
 
 export default class Ready extends ExtendedEvent {
     constructor() {
@@ -8,7 +8,7 @@ export default class Ready extends ExtendedEvent {
             once: true,
         });
     }
-    async run(_client: ExtendedClient): Promise<any> {
+    async run(): Promise<any> {
         console.clear();
         console.log("Cliente ha iniciado sessión");
     }

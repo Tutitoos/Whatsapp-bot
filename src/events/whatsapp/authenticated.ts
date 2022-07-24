@@ -1,4 +1,4 @@
-import { ExtendedClient, ExtendedEvent } from "../../interfaces";
+import { ExtendedEvent } from "../../interfaces";
 
 export default class Authenticated extends ExtendedEvent {
     constructor() {
@@ -8,7 +8,7 @@ export default class Authenticated extends ExtendedEvent {
             once: false,
         });
     }
-    async run(_client: ExtendedClient): Promise<any> {
+    async run(): Promise<any> {
         console.error("AUTHENTICATED");
     }
 }
