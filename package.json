@@ -16,7 +16,7 @@
         "format:write": "prettier --write --plugin-search-dir=. ./src"
     },
     "dependencies": {
-        "dotenv": "16.0.1",
+        "dotenv": "16.0.3",
         "gm": "^1.23.1",
         "qrcode-terminal": "0.12.0",
         "sharp": "^0.30.7",
